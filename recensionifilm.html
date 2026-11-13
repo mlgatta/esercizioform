@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Recensioni</title>
+<link href="stilerecensioni.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="container">
+<form method="post" enctype="multipart/form-data" name="form1 " id="form1"> 
+		<table>
+		<caption><b>Inserisci il film in libreria:</b></caption>
+			<tbody>
+				<tr>
+					<td class="sx">Titolo del film:</td>
+					<td class="dx"><input class="casella" type="text" name="titolo" id="titolo" /></td>
+				</tr>
+				<tr>
+					<td class="sx">Genere:</td>
+					<td class="dx">
+						<input class="casella" type="checkbox" name="azione" value="ok" />Azione |
+						<!-- se seleziono questa casella il form invia cinema:ok, altrimenti non arriva niente -->
+						<input class="casella" type="checkbox" name="commedia" value="ok" />Commedia |
+						<input class="casella" type="checkbox" name="drammatico" value="ok" />Drammatico |
+						<input class="casella" type="checkbox" name="fantascienza" value="ok" />Fantascienza |
+						<input class="casella" type="checkbox" name="fantasy" value="ok" />Fantasy | <br />
+						<input class="casella" type="checkbox" name="horror" value="ok" />Horror |
+						<!-- se seleziono questa casella il form invia cinema:ok, altrimenti non arriva niente -->
+						<input class="casella" type="checkbox" name="thriller" value="ok" />Thriller |
+						<input class="casella" type="checkbox" name="musical" value="ok" />Musical |
+						<input class="casella" type="checkbox" name="western" value="ok" />Western |
+						<input class="casella" type="checkbox" name="avventura" value="ok" />Avventura |
+						<input class="casella" type="checkbox" name="biografico" value="ok" />Biografico |
+						<input class="casella" type="checkbox" name="animazione" value="ok" />Animazione 
+				</tr>
+				<tr>
+					<td class="sx">Anno di uscita:</td>
+					<td class="dx">
+					<input class="casella" type="number" name="Anno" id="anno" value="1895" placeholder="1895" /></td>
+				</tr>
+				<tr>
+					<td class="sx">Regista: </td>
+					<td class="dx">
+						<input class="casella" type="text" name="regista" id="regista" /></td>
+				</tr>
+				<tr>
+					<td class="sx">Durata: </td>
+					<td class="dx">
+						<input class="casella" type="number" name="durata" id="durata" /> Minuti
+					</td>	
+				</tr>
+				<tr>
+					<td class="sx">Recensione: </td>
+					<td class="dx">
+						<textarea class="casella" name="recensione" rows="5" cols="110" placeholder="Scrivi qui la tua recensione..."></textarea>
+						<!-- dimensioni gestibili anche da CSS sotto forma di width e height -->
+					</td>
+				</tr>
+				<tr>
+					<td class="sx">Locandina:</td>
+					<td class="dx"><input class="casella" type="file" name="locandina" /> </td>
+				</tr>
+				</tbody>
+				<tfoot>
+				<tr>
+					<td class="sx">&nbsp;</td>
+					<td class="dx">
+						<input class="casella" type="submit" value="Aggiungi" /> <!-- invio del form predefinito -->
+						<input class="casella" type="reset" value="Reimposta i valori" /> <!-- Si resetta il form -->
+					</td>
+				</tr>
+				</tfoot>
+		</table>
+	</form> 
+	</div>
+</body>
+</html>

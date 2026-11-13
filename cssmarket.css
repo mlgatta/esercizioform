@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+	font-family: sans-serif;
+	background-color: #f6f4f4;
+	text-align: center;
+}
+
+#contenitore {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1600px;
+}
+
+#header {
+	background-color: #131921;
+	height: 60px;
+	padding: 10px 0 0 0;
+}
+
+.barra {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#cerca {
+	height: 30px;
+	font-size: 12px
+}
+
+#filtri {
+	float:left;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 40px;
+}
+
+table {
+	font-family: sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.scheda-prodotto {
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+    padding: 16px;
+    width: 280px; 
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.foto {
+	display: block;
+	max-width: 100%;
+    height: auto;
+    margin: 0 auto 12px auto;
+    border-radius: 4px;
+}
+
+.titolo {
+	text-align: center;
+	font-size: 1.1rem;
+	margin-bottom: 6px;
+}
+
+.casa-editrice {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/*
+.riga-acquisto {
+	text-align: center;
+}
+*/
+
+.riga-acquisto {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prezzo {
+	color: black; /* #2ecc71 */
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-align: left; /* float: left; */
+}
+
+.carrello {
+	background-color: #3498db; /* oppure orange, ma con l'effetto di colore nel commento sotto sul selector .carrello:hover */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+	text-align: right; /* float: right; */
+}
+
+.carrello:hover {
+    background-color: #0056b3; /* #2980b9 */
+  }
+  
+  caption {
+  text-align: left;
+  padding: 60px 0 40px 0;
+  font-size: 24px;
+  
+  }
+  
+  #barra {
+  	width: 1000px;
+  	border-radius: 4px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	height: 45px;
+  	
+  }
